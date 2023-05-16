@@ -2,12 +2,14 @@
 
 namespace App\Controllers;
 
-class ControllerInvestigadores extends BaseController
+class ControllerPortada extends BaseController
 {
     public function index()
     {
-        return view('portada/cabecera').
-                view('listado_investigadores').
+        return  view('portada/cabecera').
+                view('portada_cuerpo').
                 view('portada/pie');
     }
+
+
 }

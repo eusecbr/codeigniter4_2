@@ -11,7 +11,7 @@ $routes = Services::routes();
  * --------------------------------------------------------------------
  */
 $routes->setDefaultNamespace('App\Controllers');
-$routes->setDefaultController('Home');
+$routes->setDefaultController('ControllerPortada');
 $routes->setDefaultMethod('index');
 $routes->setTranslateURIDashes(false);
 $routes->set404Override();
@@ -29,7 +29,13 @@ $routes->set404Override();
 
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
-$routes->get('/', 'Home::index');
+$routes->get('/', 'ControllerPortada::index');
+$routes->get('/ controllerportada', 'ControllerPortada::index');
+$routes->get('/controllerinvestigadores', 'ControllerInvestigadores::index');
+$routes->post('/controllerinvestigadores', 'ControllerInvestigadores::index');
+$routes->get('/controllerinvestigadores/add', 'ControllerInvestigadores::add');
+$routes->post('/controllerinvestigadores/add', 'ControllerInvestigadores::add');
+
 
 /*
  * --------------------------------------------------------------------
