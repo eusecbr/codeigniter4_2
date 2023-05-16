@@ -124,3 +124,21 @@ in SYSTEMPATH/Exceptions/FrameworkException.php on line 33.
  5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerPortada))
  6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
  7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-16 12:06:28 --> Invalid file: "investigadores/add_investigadores.php"
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 33.
+ 1 SYSTEMPATH/View/View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('investigadores/add_investigadores.php')
+ 2 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('investigadores/add_investigadores', [], true)
+ 3 APPPATH/Controllers/ControllerInvestigadores.php(17): view('investigadores/add_investigadores')
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\ControllerInvestigadores->add()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerInvestigadores))
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-16 12:06:54 --> Invalid file: "investigadores/add_investigadores.php"
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 33.
+ 1 SYSTEMPATH/View/View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('investigadores/add_investigadores.php')
+ 2 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('investigadores/add_investigadores', [], true)
+ 3 APPPATH/Controllers/ControllerInvestigadores.php(17): view('investigadores/add_investigadores')
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\ControllerInvestigadores->add()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerInvestigadores))
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

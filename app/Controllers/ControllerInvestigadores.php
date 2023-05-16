@@ -14,7 +14,7 @@ class ControllerInvestigadores extends BaseController
     public function add()
     {
         return view('portada/cabecera').
-                view('investigadores/listado_investigadores').
+                view('investigadores/add_investigadores').
                 view('portada/pie');
     }
 }
