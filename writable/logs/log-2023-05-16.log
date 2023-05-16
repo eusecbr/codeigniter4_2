@@ -79,3 +79,30 @@ in SYSTEMPATH/Exceptions/FrameworkException.php on line 33.
  5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerPortada))
  6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
  7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-16 11:28:57 --> Invalid file: "portada_cuerpo.php"
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 33.
+ 1 SYSTEMPATH/View/View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('portada_cuerpo.php')
+ 2 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('portada_cuerpo', [], true)
+ 3 APPPATH/Controllers/ControllerPortada.php(10): view('portada_cuerpo')
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\ControllerPortada->index()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerPortada))
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-16 11:28:58 --> Invalid file: "portada_cuerpo.php"
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 33.
+ 1 SYSTEMPATH/View/View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('portada_cuerpo.php')
+ 2 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('portada_cuerpo', [], true)
+ 3 APPPATH/Controllers/ControllerPortada.php(10): view('portada_cuerpo')
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\ControllerPortada->index()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerPortada))
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-16 11:31:37 --> Invalid file: "portada_cuerpo.php"
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 33.
+ 1 SYSTEMPATH/View/View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('portada_cuerpo.php')
+ 2 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('portada_cuerpo', [], true)
+ 3 APPPATH/Controllers/ControllerPortada.php(10): view('portada_cuerpo')
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\ControllerPortada->index()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerPortada))
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
