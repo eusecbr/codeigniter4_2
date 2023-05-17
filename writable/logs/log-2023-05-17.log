@@ -49,3 +49,9 @@ WARNING - 2023-05-17 07:43:02 --> [DEPRECATED] Creation of dynamic property App\
  2 SYSTEMPATH/CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
  3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
  4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-17 07:46:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-17 07:46:13 --> [DEPRECATED] Creation of dynamic property App\Controllers\ControllerInvestigadores::$session is deprecated in APPPATH/Controllers/ControllerInvestigadores.php on line 20.
+ 1 SYSTEMPATH/CodeIgniter.php(906): App\Controllers\ControllerInvestigadores->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
