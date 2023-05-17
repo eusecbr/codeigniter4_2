@@ -25,7 +25,7 @@ class ControllerInvestigadores extends BaseController
         $this->data['page_title'] = "LISTA INVESTIGADORES";
         $this->data['list'] = $this->crud_inves->orderBy('DNI ASC')
         ->select('*')->get()->getResult();
-
+        
         echo view('portada/cabecera');
         echo view('listado_investigadores', $this->data);
         echo view('portada/pie');
