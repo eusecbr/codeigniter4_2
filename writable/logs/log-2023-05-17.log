@@ -434,3 +434,13 @@ in APPPATH/Views/investigadores/listado_investigadores.php on line 13.
  7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerInvestigadores))
  8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
  9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-17 08:53:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-17 08:53:59 --> Invalid file: "listado_investigadores.php"
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 33.
+ 1 SYSTEMPATH/View/View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('listado_investigadores.php')
+ 2 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('listado_investigadores', [], true)
+ 3 APPPATH/Controllers/ControllerInvestigadores.php(29): view('listado_investigadores', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\ControllerInvestigadores->list()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerInvestigadores))
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
