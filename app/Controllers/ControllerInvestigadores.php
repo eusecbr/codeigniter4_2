@@ -2,8 +2,35 @@
 
 namespace App\Controllers;
 
+use App\Models\CrudInvestigadores;
+
 class ControllerInvestigadores extends BaseController
 {
+    //session
+    protected $sessionId;
+    //data
+    protected $data;
+    //model
+    protected $crud_inves;
+
+    //initialize Object
+    public function __construct()
+    {
+        $this->crud_inves = new CrudInvestigadores();
+        $this->session= \Config\Services::session();
+        $this->data ['session']= $this->session;
+    }
+
+    public function list(){
+        $this->data['page_title'] = "LISTA INVESTIGADORES";
+        $this->data['list'] = $this->crud_inves->orderBy('DNI ASC')
+        ->select('*')->get()->getResult();
+
+        echo 
+
+
+    }
+
     public function index()
     {
         return view('portada/cabecera').
