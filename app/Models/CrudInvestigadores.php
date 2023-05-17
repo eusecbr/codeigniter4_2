@@ -6,5 +6,5 @@ class CrudInvestigadores extends Model{
     //Table
     protected $table = 'investigadores';
     //allowed fields
-    protected $allowedFields = ['DNI', 'NomInestigadores', 'ApellInvestigador', 'IdFacultad'];
+    protected $allowedFields = ['DNI', 'NomInvestigador', 'ApellInvestigador', 'IdFacultad'];
 }

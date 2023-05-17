@@ -12,12 +12,12 @@
     <tbody>
         <?php if(count($list) > 0): ?>
         <?php $i = 1; ?>
-        <?php foreach($list as $row):?>
+        <?php foreach($list as $rows):?>
             <tr>
-                <td><?php $row->DNI?></td>
-                <td><?php $row->NomInvestigador;?></td>
-                <td><?php $row->ApellInvestigador;?></td>
-                <td><?php $row->IdFacultad;?></td>
+                <td><?=$rows->DNI?></td>
+                <td><?=$rows->NomInvestigador;?></td>
+                <td><?=$rows->ApellInvestigador;?></td>
+                <td><?=$rows->IdFacultad;?></td>
             </tr>
         <?php endforeach; ?>
         <?php endif; ?>

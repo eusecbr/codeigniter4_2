@@ -26,7 +26,7 @@ class ControllerInvestigadores extends BaseController{
         ->select('*')->get()->getResult();
         
         echo view('portada/cabecera');
-        echo view('listado_investigadores', $this->data);
+        echo view('investigadores/listado_investigadores', $this->data);
         echo view('portada/pie');
     }
 
