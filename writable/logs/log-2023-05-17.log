@@ -55,3 +55,258 @@ WARNING - 2023-05-17 07:46:13 --> [DEPRECATED] Creation of dynamic property App\
  2 SYSTEMPATH/CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
  3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
  4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-17 07:51:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-17 07:51:13 --> [DEPRECATED] Creation of dynamic property App\Controllers\ControllerInvestigadores::$session is deprecated in APPPATH/Controllers/ControllerInvestigadores.php on line 20.
+ 1 SYSTEMPATH/CodeIgniter.php(906): App\Controllers\ControllerInvestigadores->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-17 07:51:13 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in /Users/eusebiogarciarojas/Sites/localhost/codeigniter4/system/Database/MySQLi/Connection.php:173
+Stack trace:
+#0 /Users/eusebiogarciarojas/Sites/localhost/codeigniter4/system/Database/MySQLi/Connection.php(173): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'investigadores', 3306, '', 0)
+#1 /Users/eusebiogarciarojas/Sites/localhost/codeigniter4/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /Users/eusebiogarciarojas/Sites/localhost/codeigniter4/system/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 /Users/eusebiogarciarojas/Sites/localhost/codeigniter4/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Users/eusebiogarciarojas/Sites/localhost/codeigniter4/system/Model.php(840): CodeIgniter\Database\BaseBuilder->get()
+#5 /Users/eusebiogarciarojas/Sites/localhost/codeigniter4/app/Controllers/ControllerInvestigadores.php(27): CodeIgniter\Model->__call('get', Array)
+#6 /Users/eusebiogarciarojas/Sites/localhost/codeigniter4/system/CodeIgniter.php(934): App\Controllers\ControllerInvestigadores->list()
+#7 /Users/eusebiogarciarojas/Sites/localhost/codeigniter4/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerInvestigadores))
+#8 /Users/eusebiogarciarojas/Sites/localhost/codeigniter4/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Users/eusebiogarciarojas/Sites/localhost/codeigniter4/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: NO) in /Users/eusebiogarciarojas/Sites/localhost/codeigniter4/system/Database/MySQLi/Connection.php:218
+Stack trace:
+#0 /Users/eusebiogarciarojas/Sites/localhost/codeigniter4/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /Users/eusebiogarciarojas/Sites/localhost/codeigniter4/system/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 /Users/eusebiogarciarojas/Sites/localhost/codeigniter4/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 /Users/eusebiogarciarojas/Sites/localhost/codeigniter4/system/Model.php(840): CodeIgniter\Database\BaseBuilder->get()
+#4 /Users/eusebiogarciarojas/Sites/localhost/codeigniter4/app/Controllers/ControllerInvestigadores.php(27): CodeIgniter\Model->__call('get', Array)
+#5 /Users/eusebiogarciarojas/Sites/localhost/codeigniter4/system/CodeIgniter.php(934): App\Controllers\ControllerInvestigadores->list()
+#6 /Users/eusebiogarciarojas/Sites/localhost/codeigniter4/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerInvestigadores))
+#7 /Users/eusebiogarciarojas/Sites/localhost/codeigniter4/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Users/eusebiogarciarojas/Sites/localhost/codeigniter4/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-05-17 07:51:13 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: NO)
+in SYSTEMPATH/Database/BaseConnection.php on line 427.
+ 1 SYSTEMPATH/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `investigadores`
+ORDER BY `DNI` ASC', [], false)
+ 3 SYSTEMPATH/Model.php(840): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH/Controllers/ControllerInvestigadores.php(27): CodeIgniter\Model->__call('get', [])
+ 5 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\ControllerInvestigadores->list()
+ 6 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerInvestigadores))
+ 7 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-17 07:52:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-05-17 07:52:37 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in /Users/eusebiogarciarojas/Sites/localhost/codeigniter4/system/Database/MySQLi/Connection.php:173
+Stack trace:
+#0 /Users/eusebiogarciarojas/Sites/localhost/codeigniter4/system/Database/MySQLi/Connection.php(173): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'investigadores', 3306, '', 0)
+#1 /Users/eusebiogarciarojas/Sites/localhost/codeigniter4/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /Users/eusebiogarciarojas/Sites/localhost/codeigniter4/system/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 /Users/eusebiogarciarojas/Sites/localhost/codeigniter4/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Users/eusebiogarciarojas/Sites/localhost/codeigniter4/system/Model.php(840): CodeIgniter\Database\BaseBuilder->get()
+#5 /Users/eusebiogarciarojas/Sites/localhost/codeigniter4/app/Controllers/ControllerInvestigadores.php(26): CodeIgniter\Model->__call('get', Array)
+#6 /Users/eusebiogarciarojas/Sites/localhost/codeigniter4/system/CodeIgniter.php(934): App\Controllers\ControllerInvestigadores->list()
+#7 /Users/eusebiogarciarojas/Sites/localhost/codeigniter4/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerInvestigadores))
+#8 /Users/eusebiogarciarojas/Sites/localhost/codeigniter4/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Users/eusebiogarciarojas/Sites/localhost/codeigniter4/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: NO) in /Users/eusebiogarciarojas/Sites/localhost/codeigniter4/system/Database/MySQLi/Connection.php:218
+Stack trace:
+#0 /Users/eusebiogarciarojas/Sites/localhost/codeigniter4/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /Users/eusebiogarciarojas/Sites/localhost/codeigniter4/system/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 /Users/eusebiogarciarojas/Sites/localhost/codeigniter4/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 /Users/eusebiogarciarojas/Sites/localhost/codeigniter4/system/Model.php(840): CodeIgniter\Database\BaseBuilder->get()
+#4 /Users/eusebiogarciarojas/Sites/localhost/codeigniter4/app/Controllers/ControllerInvestigadores.php(26): CodeIgniter\Model->__call('get', Array)
+#5 /Users/eusebiogarciarojas/Sites/localhost/codeigniter4/system/CodeIgniter.php(934): App\Controllers\ControllerInvestigadores->list()
+#6 /Users/eusebiogarciarojas/Sites/localhost/codeigniter4/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerInvestigadores))
+#7 /Users/eusebiogarciarojas/Sites/localhost/codeigniter4/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Users/eusebiogarciarojas/Sites/localhost/codeigniter4/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-05-17 07:52:37 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: NO)
+in SYSTEMPATH/Database/BaseConnection.php on line 427.
+ 1 SYSTEMPATH/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `investigadores`
+ORDER BY `DNI` ASC', [], false)
+ 3 SYSTEMPATH/Model.php(840): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH/Controllers/ControllerInvestigadores.php(26): CodeIgniter\Model->__call('get', [])
+ 5 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\ControllerInvestigadores->list()
+ 6 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerInvestigadores))
+ 7 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-17 07:52:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-05-17 07:52:38 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in /Users/eusebiogarciarojas/Sites/localhost/codeigniter4/system/Database/MySQLi/Connection.php:173
+Stack trace:
+#0 /Users/eusebiogarciarojas/Sites/localhost/codeigniter4/system/Database/MySQLi/Connection.php(173): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'investigadores', 3306, '', 0)
+#1 /Users/eusebiogarciarojas/Sites/localhost/codeigniter4/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /Users/eusebiogarciarojas/Sites/localhost/codeigniter4/system/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 /Users/eusebiogarciarojas/Sites/localhost/codeigniter4/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Users/eusebiogarciarojas/Sites/localhost/codeigniter4/system/Model.php(840): CodeIgniter\Database\BaseBuilder->get()
+#5 /Users/eusebiogarciarojas/Sites/localhost/codeigniter4/app/Controllers/ControllerInvestigadores.php(26): CodeIgniter\Model->__call('get', Array)
+#6 /Users/eusebiogarciarojas/Sites/localhost/codeigniter4/system/CodeIgniter.php(934): App\Controllers\ControllerInvestigadores->list()
+#7 /Users/eusebiogarciarojas/Sites/localhost/codeigniter4/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerInvestigadores))
+#8 /Users/eusebiogarciarojas/Sites/localhost/codeigniter4/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Users/eusebiogarciarojas/Sites/localhost/codeigniter4/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: NO) in /Users/eusebiogarciarojas/Sites/localhost/codeigniter4/system/Database/MySQLi/Connection.php:218
+Stack trace:
+#0 /Users/eusebiogarciarojas/Sites/localhost/codeigniter4/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /Users/eusebiogarciarojas/Sites/localhost/codeigniter4/system/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 /Users/eusebiogarciarojas/Sites/localhost/codeigniter4/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 /Users/eusebiogarciarojas/Sites/localhost/codeigniter4/system/Model.php(840): CodeIgniter\Database\BaseBuilder->get()
+#4 /Users/eusebiogarciarojas/Sites/localhost/codeigniter4/app/Controllers/ControllerInvestigadores.php(26): CodeIgniter\Model->__call('get', Array)
+#5 /Users/eusebiogarciarojas/Sites/localhost/codeigniter4/system/CodeIgniter.php(934): App\Controllers\ControllerInvestigadores->list()
+#6 /Users/eusebiogarciarojas/Sites/localhost/codeigniter4/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerInvestigadores))
+#7 /Users/eusebiogarciarojas/Sites/localhost/codeigniter4/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Users/eusebiogarciarojas/Sites/localhost/codeigniter4/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-05-17 07:52:38 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: NO)
+in SYSTEMPATH/Database/BaseConnection.php on line 427.
+ 1 SYSTEMPATH/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `investigadores`
+ORDER BY `DNI` ASC', [], false)
+ 3 SYSTEMPATH/Model.php(840): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH/Controllers/ControllerInvestigadores.php(26): CodeIgniter\Model->__call('get', [])
+ 5 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\ControllerInvestigadores->list()
+ 6 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerInvestigadores))
+ 7 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-17 07:53:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-17 07:53:59 --> Invalid file: "listado_investigadores.php"
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 33.
+ 1 SYSTEMPATH/View/View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('listado_investigadores.php')
+ 2 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('listado_investigadores', [], true)
+ 3 APPPATH/Controllers/ControllerInvestigadores.php(29): view('listado_investigadores', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\ControllerInvestigadores->list()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerInvestigadores))
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-17 07:54:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-17 07:54:00 --> Invalid file: "listado_investigadores.php"
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 33.
+ 1 SYSTEMPATH/View/View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('listado_investigadores.php')
+ 2 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('listado_investigadores', [], true)
+ 3 APPPATH/Controllers/ControllerInvestigadores.php(29): view('listado_investigadores', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\ControllerInvestigadores->list()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerInvestigadores))
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-17 07:54:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-17 07:54:01 --> Invalid file: "listado_investigadores.php"
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 33.
+ 1 SYSTEMPATH/View/View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('listado_investigadores.php')
+ 2 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('listado_investigadores', [], true)
+ 3 APPPATH/Controllers/ControllerInvestigadores.php(29): view('listado_investigadores', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\ControllerInvestigadores->list()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerInvestigadores))
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-17 07:55:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-05-17 07:55:10 --> mysqli_sql_exception: Table 'investigadores.listado_investigadores' doesn't exist in /Users/eusebiogarciarojas/Sites/localhost/codeigniter4/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /Users/eusebiogarciarojas/Sites/localhost/codeigniter4/system/Database/MySQLi/Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /Users/eusebiogarciarojas/Sites/localhost/codeigniter4/system/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /Users/eusebiogarciarojas/Sites/localhost/codeigniter4/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /Users/eusebiogarciarojas/Sites/localhost/codeigniter4/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Users/eusebiogarciarojas/Sites/localhost/codeigniter4/system/Model.php(840): CodeIgniter\Database\BaseBuilder->get()
+#5 /Users/eusebiogarciarojas/Sites/localhost/codeigniter4/app/Controllers/ControllerInvestigadores.php(26): CodeIgniter\Model->__call('get', Array)
+#6 /Users/eusebiogarciarojas/Sites/localhost/codeigniter4/system/CodeIgniter.php(934): App\Controllers\ControllerInvestigadores->list()
+#7 /Users/eusebiogarciarojas/Sites/localhost/codeigniter4/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerInvestigadores))
+#8 /Users/eusebiogarciarojas/Sites/localhost/codeigniter4/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Users/eusebiogarciarojas/Sites/localhost/codeigniter4/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-05-17 07:55:10 --> Table 'investigadores.listado_investigadores' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 295.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(295): mysqli->query('SELECT *
+FROM `listado_investigadores`
+ORDER BY `DNI` ASC', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `listado_investigadores`
+ORDER BY `DNI` ASC')
+ 3 SYSTEMPATH/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `listado_investigadores`
+ORDER BY `DNI` ASC')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `listado_investigadores`
+ORDER BY `DNI` ASC', [], false)
+ 5 SYSTEMPATH/Model.php(840): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH/Controllers/ControllerInvestigadores.php(26): CodeIgniter\Model->__call('get', [])
+ 7 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\ControllerInvestigadores->list()
+ 8 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerInvestigadores))
+ 9 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-17 07:55:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-05-17 07:55:11 --> mysqli_sql_exception: Table 'investigadores.listado_investigadores' doesn't exist in /Users/eusebiogarciarojas/Sites/localhost/codeigniter4/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /Users/eusebiogarciarojas/Sites/localhost/codeigniter4/system/Database/MySQLi/Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /Users/eusebiogarciarojas/Sites/localhost/codeigniter4/system/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /Users/eusebiogarciarojas/Sites/localhost/codeigniter4/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /Users/eusebiogarciarojas/Sites/localhost/codeigniter4/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Users/eusebiogarciarojas/Sites/localhost/codeigniter4/system/Model.php(840): CodeIgniter\Database\BaseBuilder->get()
+#5 /Users/eusebiogarciarojas/Sites/localhost/codeigniter4/app/Controllers/ControllerInvestigadores.php(26): CodeIgniter\Model->__call('get', Array)
+#6 /Users/eusebiogarciarojas/Sites/localhost/codeigniter4/system/CodeIgniter.php(934): App\Controllers\ControllerInvestigadores->list()
+#7 /Users/eusebiogarciarojas/Sites/localhost/codeigniter4/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerInvestigadores))
+#8 /Users/eusebiogarciarojas/Sites/localhost/codeigniter4/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Users/eusebiogarciarojas/Sites/localhost/codeigniter4/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-05-17 07:55:11 --> Table 'investigadores.listado_investigadores' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 295.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(295): mysqli->query('SELECT *
+FROM `listado_investigadores`
+ORDER BY `DNI` ASC', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `listado_investigadores`
+ORDER BY `DNI` ASC')
+ 3 SYSTEMPATH/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `listado_investigadores`
+ORDER BY `DNI` ASC')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `listado_investigadores`
+ORDER BY `DNI` ASC', [], false)
+ 5 SYSTEMPATH/Model.php(840): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH/Controllers/ControllerInvestigadores.php(26): CodeIgniter\Model->__call('get', [])
+ 7 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\ControllerInvestigadores->list()
+ 8 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerInvestigadores))
+ 9 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-17 07:55:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-17 07:55:34 --> Invalid file: "listado_investigadores.php"
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 33.
+ 1 SYSTEMPATH/View/View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('listado_investigadores.php')
+ 2 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('listado_investigadores', [], true)
+ 3 APPPATH/Controllers/ControllerInvestigadores.php(29): view('listado_investigadores', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\ControllerInvestigadores->list()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerInvestigadores))
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-17 07:57:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-17 07:57:20 --> Undefined variable $list
+in APPPATH/Views/investigadores/listado_investigadores.php on line 13.
+ 1 APPPATH/Views/investigadores/listado_investigadores.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $list', '/Users/eusebiogarciarojas/Sites/localhost/codeigniter4/app/Views/investigadores/listado_investigadores.php', 13)
+ 2 SYSTEMPATH/View/View.php(213): include('/Users/eusebiogarciarojas/Sites/localhost/codeigniter4/app/Views/investigadores/listado_investigadores.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('investigadores/listado_investigadores', [], true)
+ 5 APPPATH/Controllers/ControllerInvestigadores.php(36): view('investigadores/listado_investigadores')
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\ControllerInvestigadores->index()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerInvestigadores))
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-17 07:57:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-17 07:57:31 --> Invalid file: "listado_investigadores.php"
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 33.
+ 1 SYSTEMPATH/View/View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('listado_investigadores.php')
+ 2 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('listado_investigadores', [], true)
+ 3 APPPATH/Controllers/ControllerInvestigadores.php(29): view('listado_investigadores', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\ControllerInvestigadores->list()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerInvestigadores))
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

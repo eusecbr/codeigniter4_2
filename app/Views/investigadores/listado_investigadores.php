@@ -1,4 +1,4 @@
-<h1>listdo INVESTIGADORES</h1>
+<h1>LISTADO INVESTIGADORES</h1>
 
 <table>
     <thead>

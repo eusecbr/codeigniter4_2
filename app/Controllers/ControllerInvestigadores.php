@@ -4,10 +4,9 @@ namespace App\Controllers;
 
 use App\Models\CrudInvestigadores;
 
-class ControllerInvestigadores extends BaseController
-{
+class ControllerInvestigadores extends BaseController{
     //session
-    protected $sessionId;
+    protected $session;
     //data
     protected $data;
     //model
