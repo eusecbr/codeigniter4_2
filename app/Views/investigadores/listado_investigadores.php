@@ -9,4 +9,6 @@
             <th>Id Facultad</th>
         </tr>
     </thead>
+    <tbody>
+        <?php if(count($list) > )
 </table>

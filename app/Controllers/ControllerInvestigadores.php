@@ -27,6 +27,10 @@ class ControllerInvestigadores extends BaseController
         ->select('*')->get()->getResult();
 
         echo 
+        echo
+        echo
+
+        
 
 
     }
