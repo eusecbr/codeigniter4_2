@@ -33,6 +33,10 @@ $routes->get('/', 'ControllerPortada::index');
 $routes->get('/ controllerportada', 'ControllerPortada::index');
 $routes->get('/controllerinvestigadores', 'ControllerInvestigadores::index');
 $routes->post('/controllerinvestigadores', 'ControllerInvestigadores::index');
+
+$routes->get('/controllerinvestigadores/list', 'ControllerInvestigadores::list');
+$routes->post('/controllerinvestigadores/list', 'ControllerInvestigadores::list');
+
 $routes->get('/controllerinvestigadores/add', 'ControllerInvestigadores::add');
 $routes->post('/controllerinvestigadores/add', 'ControllerInvestigadores::add');
 
